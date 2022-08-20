@@ -1,1 +1,2 @@
 # cv-rnegi
+Güncelleme
