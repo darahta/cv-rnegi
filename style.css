@@ -1,3 +1,9 @@
+:root{
+    --borderColor:#ddd;
+    --contentTitle:#444;
+    --marginLeft:20px;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -6,7 +12,7 @@
 
 }
 body{
-    background-color: #ddd;
+    background-color: var(--borderColor);
 }
 .maincontainer{
     width: 794px;
@@ -15,13 +21,16 @@ body{
     margin: 50px auto;
     background-color: #fff;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.400);
-    padding: 30px 20px;
+    padding: 30px 0;
+    padding-bottom: 50px;
+    padding-left: 20px;
 }
 .header{
    
     width: 100%;
     height: 200px;
     display: flex;
+    
     
 }
 
@@ -37,6 +46,7 @@ a{
 .profileImgContainer img{
     width: 100%;
     height: 100%;
+    border-radius: 50%;
 }
 .profileInfosContainer{
     
@@ -46,6 +56,16 @@ a{
     display: flex;
     flex-direction: column;
     gap: 20px;
+    background-color: aqua;
+    color: #fff;
+    margin-left: 20px;
+    background: linear-gradient(90deg, rgba(99,235,207,1) 0%, rgba(22,63,210,1) 0%, rgba(94,97,223,1) 39%, rgba(148,167,233,1) 68%);
+}
+.name{
+    font-size: 24px;
+}
+.profileInfoText{
+    color: rgb(255, 255, 255, 0.7);
 }
 
 .content {
@@ -62,12 +82,7 @@ a{
     min-height: 100%;
 }
 
-.rightContainer{
-   
-    min-height: 300px;
-    flex: 1;
-    
-}
+
 
 .contentContainer{
     border-bottom: 1px solid #ddd;
@@ -124,20 +139,57 @@ a{
     padding-left: 5px;
 }
 
-.deneme{
-    position: relative;
-    width: 100%;
-    text-align: center;
-    height: 100%;
-    
-    transform: rotate(-40deg)
+/* CONTENT RİGHT */
+
+.marginTop30{
+    margin-top: 30px;
+}
+
+
+.marginTop10{
+    margin-top: 10px;
+}
+
+.marginTop5{
+    margin-top: 5px;
+}
+
+.rightContainer{
+   
+    min-height: 300px;
+    flex: 1;
+    padding: 0 20px;
     
 }
-.deneme1{
-    border-top: 50px;
-    font-size: 30px;
-    position: absolute;
-    top: 30%;
-    left: 20%;
-    
+
+.contentComponent{
+    border-left: 5px solid;
+    padding-left:20px;
+    margin-top: 10px;
+    border-color: #0072b1;
+}
+
+.componentTitle{
+    font-size: 24px;
+    border-bottom: 1px solid var(--contentTitle);
+    color: var(--contentTitle);
+}
+.componentItemTitle{
+    font-size: 18px;
+    color: var(--contentTitle);
+}
+.componentItemSubTitle{
+    font-size: 14px;
+    color: var(--contentTitle);
+}
+.componentItemInfo{
+    font-size: 12px;
+    color: var(--contentTitle);
+}
+.componentItemDescription{
+    font-size: 10px;
+    color: var(--contentTitle);
+}
+.contentu1{
+    padding-left: 30px;
 }
