@@ -8,18 +8,22 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/14a3a646e9.js" crossorigin="anonymous"></script>
     
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body>
-    <div class="maincontainer">
+    <div class="topcontainer">
+        <button id="pdfBtn">Export to PDF</button>
+    </div>
+    <div class="maincontainer" id="myCv">
 
         <div class="header">
             <div class="profileImgContainer">
                 <img src="resim.jpg" alt="">
             </div>
             <div class="profileInfosContainer">
-                <h1 class="name">Mehmet Süm</h1>
+                <h1 class="name" id="nameSurname">Mehmet SÜM</h1>
                 <h4>Frontend Developer</h4>
-                <p class="profileInfoText">33 yaşında evliyim. 7 yıllık idari işler ve geçmişim vardır. 2022 mayıs ayından itibaren IT alanında kendimi geliştiriyorum. IT alanında uluslararası eğitim aldığım sertifikam vardır. Öğrenmeye ve gelişmeye açık biriyim. Ayrıca IT alanında yapmış olduğum çalışmalar GitHup profilimde bulunmaktadır. </p>
+                <p class="profileInfoText">33 yaşında evliyim. 7 yıllık idari işler geçmişim vardır. 2022 mayıs ayından itibaren IT alanında kendimi geliştiriyorum. IT alanında uluslararası eğitim aldığım sertifikam vardır. Öğrenmeye ve gelişmeye açık biriyim. Ayrıca IT alanında yapmış olduğum çalışmalar GitHup profilimde bulunmaktadır. </p>
 
             </div>
         </div>
@@ -117,5 +121,6 @@
         </div>
 
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
