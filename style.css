@@ -78,18 +78,27 @@ a{
     padding: 5px 20px;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
     background-color: aqua;
     color: #fff;
     margin-left: 20px;
-    background: linear-gradient(90deg, rgba(99,235,207,1) 0%, rgba(22,63,210,1) 0%, rgba(94,97,223,1) 39%, rgba(148,167,233,1) 68%);
+    background: linear-gradient(90deg, rgb(20, 185, 56) 0%, rgb(15, 32, 190) 0%, rgba(94,97,223,1) 50%, rgba(148,167,233,1) 94%);
 }
 .name{
-    font-size: 24px;
+    font-size: 20px;
+    font-style: italic;
+}
+.surname{
+    font-size: 15px;
+    font-style: italic;
 }
 .profileInfoText{
     color: rgb(255, 255, 255, 0.7);
+    font-style: italic;
+
+    
 }
+
 
 .content {
    
@@ -98,6 +107,7 @@ a{
     margin-top: 10px;
     display: flex;
 }
+
 
 .leftContainer{
   
@@ -109,28 +119,47 @@ a{
 
 .contentContainer{
     border-bottom: 1px solid #ddd;
-    padding: 5px 0;
+    padding: 5px 0px;
 
 
     
 }
 .contentContainer i{
-  
+  font-size: 16px;
 }
+.contentContainer .fa-envelope{
+    color:rgb(231, 22, 92);
+} 
 
 .contentContainer a{
-    font-size: 12px;
+    font-size: 15px;
     color: black;
+    font-style: italic;
 }
+.contentContainer .fa-location-dot{
+    color: brown;
+}
+.contentContainer span{
+    font-size: 15px;
+    font-style: italic;
+}
+.contentContainer, .fa-solid{
+    text-align: center;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
 
 #linkedin i{
     color: blue;
 }
 .leftSectionTitle{
     font-size: 16px;
-    margin: 20px 0px;
+    margin: 10px 0px;
     border-bottom: 1px solid;
     padding-bottom: 5px;
+    text-align: center;
+    font-style: italic;
 }
 
 .skilssContainer{
@@ -140,14 +169,16 @@ a{
 }
 
 .skillBox{
-    background-color: #bbb;
+    background-color: rgb(114, 109, 109);
     color: white;
     padding: 5px;
-    border-radius: 8px;
+    border-radius: 10px;
+    font-style: italic;
+    font-weight: 500;
 
 }
 .languagesContainer{
-
+    border-bottom: 1px solid #ddd;
     margin-bottom: 10px;
 }
 
@@ -176,14 +207,17 @@ a{
 .marginTop5{
     margin-top: 5px;
 }
+.marginTop30{
+font-style: italic;}
 
 .rightContainer{
-   
+
     min-height: 300px;
     flex: 1;
     padding: 0 20px;
     
 }
+
 
 .contentComponent{
     border-left: 5px solid;
@@ -193,17 +227,27 @@ a{
 }
 
 .componentTitle{
-    font-size: 24px;
+    font-size: 18px;
     border-bottom: 1px solid var(--contentTitle);
     color: var(--contentTitle);
+    font-style: italic;
+    text-align: center;
+    padding-bottom: 12px;
 }
 .componentItemTitle{
-    font-size: 18px;
+    font-size: 15px;
     color: var(--contentTitle);
+    font-style: italic;
 }
 .componentItemSubTitle{
-    font-size: 14px;
+    font-size: 15px;
     color: var(--contentTitle);
+}
+.languagesContainer{
+    text-align: center;
+}
+.languagesTitle{
+    font-style: italic;
 }
 .componentItemInfo{
     font-size: 12px;
@@ -212,6 +256,7 @@ a{
 .componentItemDescription{
     font-size: 10px;
     color: var(--contentTitle);
+    font-style: italic;
 }
 .contentu1{
     padding-left: 30px;

@@ -1,126 +1,228 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/14a3a646e9.js" crossorigin="anonymous"></script>
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-</head>
-<body>
-    <div class="topcontainer">
-        <button id="pdfBtn">Export to PDF</button>
-    </div>
-    <div class="maincontainer" id="myCv">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+      <link rel="stylesheet" href="style.css" />
+      <script
+         src="https://kit.fontawesome.com/14a3a646e9.js"
+         crossorigin="anonymous"
+      ></script>
 
-        <div class="header">
+      <script
+         src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
+         integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
+         crossorigin="anonymous"
+         referrerpolicy="no-referrer"
+      ></script>
+   </head>
+   <body>
+      <div class="topcontainer">
+         <button id="pdfBtn">Export to PDF</button>
+      </div>
+      <div class="maincontainer" id="myCv">
+         <div class="header">
             <div class="profileImgContainer">
-                <img src="resim.jpg" alt="">
+               <img src="resim.jpg" alt="" />
             </div>
             <div class="profileInfosContainer">
-                <h1 class="name" id="nameSurname">Mehmet SÜM</h1>
-                <h4>Frontend Developer</h4>
-                <p class="profileInfoText">33 yaşında evliyim. 7 yıllık idari işler geçmişim vardır. 2022 mayıs ayından itibaren IT alanında kendimi geliştiriyorum. IT alanında uluslararası eğitim aldığım sertifikam vardır. Öğrenmeye ve gelişmeye açık biriyim. Ayrıca IT alanında yapmış olduğum çalışmalar GitHup profilimde bulunmaktadır. </p>
-
+               <h1 class="name" id="nameSurname">Mehmet SÜM</h1>
+               <h4 class="surname">Frontend Developer</h4>
+               <p class="profileInfoText">
+                  Html, Css, Js, React-Redux teknolojilerine odaklanan ve
+                  kendini yetiştiren ve azimli işini severek yapan biri olarak
+                  dahiyane bir ekiple çalışmak için sabırsızlanıyorum. Kendimi
+                  teknoloji alanında en üst seviyeye çıkarmak ve bi okadar da
+                  insanlara hizmet sunabilmektir. Birşeyi öğrenmenin en iyi yolu
+                  bilginizi aktif hale getirmek için öğrendiklerinizi anlayarak
+                  ve uygulayarak pratik yapmaktır.
+               </p>
             </div>
-        </div>
-        <div class="content">
+         </div>
+         <div class="content">
             <!--left side-->
-            <div class="leftContainer"><!--left kontainer açılış-->
-                <div class="contentContainer">
-                    <div><i class="fa-solid fa-envelope"></i></div>
-                    <div><a href="mailto:mehmedimsm@hotmail.com">mehmedimsm@hotmail.com</a></div>
-                </div>
+            <div class="leftContainer">
+               <!--left kontainer açılış-->
 
-                <div class="contentContainer">
-                    <div><i class="fa-solid fa-phone"></i></div>
-                    <div><a href="tel:5416774543">541-677-45-43</a></div>
-                </div>
+               <div>
+                  <h3 class="leftSectionTitle">İLETİŞİM</h3>
+               </div>
+               <div class="contentContainer">
+                  <div><i class="fa-solid fa-envelope"></i></div>
+                  <div>
+                     <a href="mailto:mehmedimsm@hotmail.com"
+                        >mehmedimsm@hotmail.com</a
+                     >
+                  </div>
+               </div>
 
-                <div class="contentContainer">
-                    <div><i class="fa-solid fa-location-dot"></i></div>
-                    <div><span>Türkey / İstanbul</span></div>
-                </div>
+               <div class="contentContainer">
+                  <div><i class="fa-solid fa-phone"></i></div>
+                  <div><a href="tel:5416774543">541-677-45-43</a></div>
+               </div>
 
-                <div class="contentContainer">
-                    <div id="linkedin"><i class="fa-brands fa-linkedin"></i> </div>
-                    <div><a target="_blank" href="mailto:someone@example.com">Linkedin</a></div>
-                </div>
+               <div class="contentContainer">
+                  <div><i class="fa-solid fa-location-dot"></i></div>
+                  <div><span>Türkey / İstanbul</span></div>
+               </div>
 
-                <div class="contentContainer">
-                    <div><i class="fa-brands fa-github"></i></div>
-                    <div><a href="mailto:someone@example.com">Gitup</a></div>
-                </div>
+               <div class="contentContainer">
+                  <div id="linkedin"><i class="fa-brands fa-linkedin"></i></div>
+                  <div>
+                     <a target="_blank" href="mailto:someone@example.com"
+                        >linkedin.com/in/mehmet-süm</a
+                     >
+                  </div>
+               </div>
 
-                <!--skills başlangıç-->
-                <h3 class="leftSectionTitle">YETENEKLER</h3>
-                <div class="skilssContainer">
-                    <p class="skillBox">Html</p>
-                    <p class="skillBox">Css3</p>
-                    <p class="skillBox">Javascript</p>
-                    <p class="skillBox">React</p>
-                    <p class="skillBox">Redux</p>
-                    <p class="skillBox">Express.jsc</p>
-                    <p class="skillBox">Git</p>
-                </div>
+               <div class="contentContainer">
+                  <div><i class="fa-brands fa-github"></i></div>
+                  <div>
+                     <a href="mailto:someone@example.com">github.com/darahta</a>
+                  </div>
+               </div>
 
-                <h3 class="leftSectionTitle">DİLLER</h3>
-                    <div class="languagesContainer">
-                        <p class="languagesTitle">İngilizce</p>
-                        <p class="languagesDetail"> <i>Başlangıç aşamasında</i> </p>
-                    </div>
+               <!--skills başlangıç-->
+               <h3 class="leftSectionTitle">YETENEKLER</h3>
+               <div class="skilssContainer">
+                  <p class="skillBox">HTML5</p>
+                  <p class="skillBox">Scss</p>
+                  <p class="skillBox">Css5</p>
+                  <p class="skillBox">Bootsrtrap</p>
+                  <p class="skillBox">JS</p>
+                  <p class="skillBox">React</p>
+                  <p class="skillBox">Redux</p>
+                  <p class="skillBox">TypeScript</p>
+                  <p class="skillBox">Git</p>
+                  <p class="skillBox">Trello-jira-Aws</p>
+                  <p class="skillBox">Slack</p>
+               </div>
 
-                    <div class="languagesContainer">
-                        <p class="languagesTitle">Türkçe</p>
-                        <p class="languagesDetail"> <i>Anadil</i> </p>
-                    </div>
+               <h3 class="leftSectionTitle">DİLLER</h3>
+               <div class="languagesContainer">
+                  <p class="languagesTitle">İngilizce</p>
+                  <p class="languagesDetail"><i>A1-A2</i></p>
+               </div>
 
-
-            </div> <!--left container kapanış-->
+               <div class="languagesContainer">
+                  <p class="languagesTitle">Türkçe</p>
+                  <p class="languagesDetail"><i>Anadil</i></p>
+               </div>
+            </div>
+            <!--left container kapanış-->
 
             <!--right side-->
             <div class="rightContainer">
-                <h1 class="componentTitle">EĞİTİM</h1>              
-                <div class="contentComponent">
-                    
-                    <h2 class="componentItemTitle">Eskişehir Anadolu Üniversitesi</h2>
-                    <h3 class="componentItemSubTitle marginTop5">işletme</h3>
-                    <p class="componentItemInfo marginTop5"><small>2008 - 2012</small></p>
-                    <p class="componentItemDescription marginTop5">Description</p>
-                </div>
-                <h1 class="componentTitle marginTop30">DENEYİM</h1>              
-                <div class="contentComponent">
-                    
-                    <h2 class="componentItemTitle">UDEMY</h2>
-                    <h3 class="componentItemSubTitle marginTop5">React çalışmaları</h3>
-                    <p class="componentItemInfo marginTop5"><small>2022</small></p>
-                    <ul class="contentu1 marginTop10">
-                        <li class="componentItemDescription">Html, Css çalışmaları yaparak web sayfası çalışmaları yaptım.</li>
-                        <li class="componentItemDescription marginTop5">Javascript ve React eğitimlerine devam ediyorum.</li>
-                    </ul>
-                </div>
+               <h1 class="componentTitle">EĞİTİM</h1>
+               <div class="contentComponent">
+                  <h2 class="componentItemTitle">ARAPULUE / UDEMİG (2022)</h2>
+                  <h3 class="componentItemSubTitle marginTop5"></h3>
 
-                <h1 class="componentTitle marginTop30">PROJELER</h1>
+                  <ul class="contentu1 marginTop10">
+                     <li class="componentItemDescription">
+                        REACT-REDUX KODLAMALARI
+                     </li>
+                  </ul>
+               </div>
+               <br />
+               <div class="contentComponent">
+                  <h2 class="componentItemTitle">
+                     ANADOLU ÜNİVERSİTESİ (2012)
+                  </h2>
 
-                <div class="contentComponent">
-                    
-                    <h2 class="componentItemTitle">HTML -  Css - Javascript</h2>
-                    <h3 class="componentItemSubTitle marginTop5">ÇALIŞMALAR DEVAM EDİYOR</h3>
-                    <p class="componentItemInfo marginTop5"><small>hangi teknolojiyi kullandım ve nerelerde zorlandık.</small></p>
-                    <ul class="contentu1 marginTop10">
-                        <li class="componentItemDescription">???</li>
-                        <li class="componentItemDescription marginTop5">???</li>
-                        
-                    </ul>
-                </div>
+                  <ul class="contentu1 marginTop10">
+                     <li class="componentItemDescription">lİSANS / İŞLETME</li>
+                  </ul>
+               </div>
 
+               <h1 class="componentTitle marginTop30">PROJELERİM</h1>
+
+               <div class="contentComponent">
+                  <h2 class="componentItemTitle">
+                     ALIŞVERİŞ SİTESİ
+                     <small
+                        >(https://github.com/darahta/al-sveris-sitesi)</small
+                     >
+                  </h2>
+
+                  <ul class="contentu1 marginTop10">
+                     <li class="componentItemDescription">
+                        REACT, REDUX, REACT-ROUTER-DOM APİ DEN VERİ ÇEKME
+                        KULLANILDI
+                     </li>
+                  </ul>
+               </div>
+               <br />
+               <div class="contentComponent">
+                  <h2 class="componentItemTitle">
+                     APİDEN VERİ ÇEKME VE LİSTELEME ÇALIŞMASI
+                     <small
+                        >(https://github.com/darahta/register_calismasi)</small
+                     >
+                  </h2>
+
+                  <ul class="contentu1 marginTop10">
+                     <li class="componentItemDescription">
+                        REACT, REDUX, REACT-ROUTER-DOM APİ DEN VERİ ÇEKME
+                        KULLANILDI
+                     </li>
+                  </ul>
+               </div>
+               <br />
+               <br />
+               <div class="contentComponent">
+                  <h2 class="componentItemTitle">
+                     KÜTÜPHANE, SİLME VE KAYIT İŞLEMLERİ
+                     <small
+                        >(https://github.com/darahta/kitap-ekleme-silme)</small
+                     >
+                  </h2>
+
+                  <ul class="contentu1 marginTop10">
+                     <li class="componentItemDescription">
+                        REACT, REDUX, REACT-ROUTER-DOM, JSON-SERVER VERİ ÇEKME,
+                        KULLANILDI
+                     </li>
+                  </ul>
+               </div>
+               <br />
+               <br />
+               <div class="contentComponent">
+                  <h2 class="componentItemTitle">
+                     HASTANE KAYIT İŞLEMLERİ
+                     <small
+                        >(https://github.com/darahta/react-class-hospital)</small
+                     >
+                  </h2>
+
+                  <ul class="contentu1 marginTop10">
+                     <li class="componentItemDescription">
+                        REACT, REDUX, REACT-ROUTER-DOM, JSON-SERVER, BOOSTRAP
+                        VERİ ÇEKME, KULLANILDI
+                     </li>
+                  </ul>
+               </div>
+               <br />
+               <br />
+               <div class="contentComponent">
+                  <h2 class="componentItemTitle">
+                     LOGIN VE LOGOUT ÇALIŞMASI
+                     <small
+                        >(https://github.com/darahta/react-mail-al-st-rma)</small
+                     >
+                  </h2>
+
+                  <ul class="contentu1 marginTop10">
+                     <li class="componentItemDescription">
+                        REACT, REDUX, REACT-ROUTER-DOM, VERİ ÇEKME, KULLANILDI
+                     </li>
+                  </ul>
+               </div>
             </div>
-        </div>
-
-    </div>
-    <script src="script.js"></script>
-</body>
+         </div>
+      </div>
+      <script src="script.js"></script>
+   </body>
 </html>
